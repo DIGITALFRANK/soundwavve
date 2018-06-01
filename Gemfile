@@ -1,5 +1,24 @@
 
 
+# 1 - configure and deploy to Heroku
+
+
+# 2 - style devise registration & login (add necessary form fields for registration)
+# 3 - begin post-login home page (users/feed) - scaffold layout
+# 4 - turn posts page into partial that can be rendered by JS and displayed multiple places
+
+# 5 - build studio table / model etc... create necessary relationships
+# 6 - follow tutorial for following / unfollowing users
+# 7 - follow tutorial for ActionCable live chat feature (once users follow one another (both active relationships), auto-generate the chat room)
+
+
+
+
+
+
+
+
+
 
 
 

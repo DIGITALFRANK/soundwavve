@@ -1,24 +1,8 @@
-# README
+# SOUNDDWAVVE
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+AIRBNB CLONE FOR RECORDING STUDIO SESSION BOOKING, AND MUSIC COMMUNITY-BASED SOCIAL NETWORK
+– LIST YOUR RECORDING STUDIO FOR BOOKINGS AS AN OWNER, RECEIVE PAYMENT AS OWNER, BOOK STUDIO SESSIONS AS AN ARTIST, ENGINEER OR PRODUCER, 
+– USE GEO-LOCATION TO SEE STUDIO LISTINGS / POTENTIAL CUSTOMERS NEAR YOU, USE DATE & TIME INFO TO NARROW YOUR SEARCH, BUILD COMMUNITY
+=> PostgreSQL, Ruby on Rails, Bootstrap, Stripe Payments, Paypal API, Apple Music API, Google Maps API [ Heroku ]
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

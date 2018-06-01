@@ -1,3 +1,5 @@
+
+
 <div class="page_container register_container">
   <div class="container">
     <h2>Sign up</h2>
@@ -5,8 +7,8 @@
     <%= bootstrap_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= devise_error_messages! %>
     
-        <%= f.email_field :first_name, autofocus: true, class: "new_user_input" %>
-        <%= f.email_field :last_name, class: "new_user_input" %>
+        <%= f.text_field :first_name, label: "First Name", autofocus: true, class: "new_user_input" %>
+        <%= f.text_field :last_name, label: "Last Name", class: "new_user_input" %>
         <%= f.email_field :email, autocomplete: "email", class: "new_user_input" %>
         <%= f.password_field :password, autocomplete: "off", class: "new_user_input" %>
         <% if @minimum_password_length %>
@@ -17,6 +19,8 @@
         <%= f.submit "create your account" %>
     <% end %>
     
-    <%= render "users/shared/links" %>
+    <div class="devise_links">
+      <%= render "users/shared/links" %>
+    </div>
   </div>
 </div>

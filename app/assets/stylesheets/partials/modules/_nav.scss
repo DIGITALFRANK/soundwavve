@@ -9,7 +9,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000000
+    z-index: 1000000;
     // background-color: #000;
 }
 
@@ -23,10 +23,23 @@
 }
 
 .login {
+    button {
+        color: salmon;
+    }
+}
+
+.sign_up {
     margin-right: 50px;
     button {
         padding: 2px 25px;
         font-weight: bold;
         // background: rgb(19, 252, 147);
+    }
+}
+
+#top_nav_dropdown {
+    text-align: center;
+    li {
+        padding: 10px;
     }
 }

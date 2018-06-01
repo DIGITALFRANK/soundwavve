@@ -10,6 +10,63 @@
   </head>
 
   <body>
+      <%#################################### top nav #################################### %>
+    <nav id="top_nav" class="navbar navbar-expand-lg navbar-dark bg-dark my_nav">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <% if user_signed_in? %>
+    
+            <li class="dropdown">
+              <a id="userDropdown" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <%= current_user.first_name %>
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="userDropdown">
+                  <li><%= link_to 'home', root_path, :class => 'nav-link' %></li>
+                  <li><p><%= link_to 'Profile', "/users/#{current_user.id}", :class => 'nav-link' %></p></li>
+                  <div class="dropdown-divider"></div>
+                  <li><%= link_to 'Log out', destroy_user_session_path, method: :delete, :class => 'nav-link' %></li>
+              </ul>
+            </li>
+
+          <% else %>
+
+            <ul id="nav_buttons" class="navbar-nav mr-auto nav_list"> 
+              <li class="nav-item">
+                <a href="/users/sign_in">
+                  <button class="btn btn-sm btn-dark">login</button>
+                </a>
+              </li>
+              <li class="nav-item login">
+                <a href="/users/sign_up">
+                  <button class="btn btn-sm btn-light">sign up</button>
+                </a>
+              </li>
+            </ul>
+
+          <% end %>
+
+        </ul>
+      </div>
+    </nav>
+  <%#################################### end top nav #################################### %>
+
+  <%# Devise alerts... do I need something for Devise notices? %>
+    <div class="alerts">
+      <% flash.each do |key, value| %>
+        <div class="alert alert-<%= key %>">
+          <%= value %>
+        </div>
+      <% end %>
+    </div>
+
+    <%= yield :top_content %>
+    
     <%= yield %>
   </body>
 </html>

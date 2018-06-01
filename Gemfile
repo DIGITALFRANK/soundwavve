@@ -1,6 +1,11 @@
 
 
 # 1 - configure and deploy to Heroku
+#### heroku run rake db:create
+#### heroku run rake db:migrate
+#### heroku run rake db:seed
+
+
 
 
 # 2 - style devise registration & login (add necessary form fields for registration)

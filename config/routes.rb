@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
 
   devise_for :users
-
+  # get "/users/sign_up", to: "users/registrations#new"
 
   
   root 'users#welcome'

@@ -7,3 +7,18 @@
         background: rgb(216, 216, 216);
     }
 }
+
+#login {
+    label {
+        margin: 0 10px;
+        transform: translateY(10px);
+    }
+    .remember_me {
+        transform: translateY(-25px);
+        transform: translateX(10px);
+    }
+    .login_input {
+        border-radius: 5px;
+        width: 185px;
+    }
+}

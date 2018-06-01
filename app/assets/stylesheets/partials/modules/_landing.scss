@@ -1,6 +1,9 @@
 
 
 #landing_container {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     background-image: url("/assets/soundwavve_landing.jpg");
@@ -21,6 +24,8 @@
         color: salmon;
     }
     .pitch {
+        font-size: 1.2em;
+        line-height: 1.5em;
         color: #fff;
         span {
             font-weight: bold;

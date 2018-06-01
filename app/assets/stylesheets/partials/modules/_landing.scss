@@ -1,0 +1,31 @@
+
+
+#landing_container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/assets/soundwavve_landing.jpg");
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        margin-right: 50px;
+        font-size: 3em;
+        color: salmon;
+    }
+    .pitch {
+        color: #fff;
+        span {
+            font-weight: bold;
+            color: salmon;
+        }
+    }
+}
+

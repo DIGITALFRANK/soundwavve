@@ -11,3 +11,20 @@
 .nav-link {
     color: #444;
 }
+
+.post_table {
+    tbody {
+        margin-top: 50px;
+    }
+    .post_head {
+        font-size: 2em;
+    }
+    .post_title {
+        font-weight: bold;
+        color: #444;
+    }
+    .post_body {
+        color: #999;
+    }
+}
+

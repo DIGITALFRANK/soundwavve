@@ -43,13 +43,19 @@
 
 #user_dropdown, #studios_dropdown, #connect_dropdown {
     text-align: center;
+    background: rgb(39, 39, 39);
     li {
         padding: 10px;
+        background: rgb(39, 39, 39);
+    }
+    .dropdown-divider {
+        border-top: 1px solid #444;
     }
 }
 
 .nav_links {
-    float: right;
+    position: absolute;
+    right: 25px;
     > li {
         display: inline;
         margin-left: 25px;

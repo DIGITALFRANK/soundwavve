@@ -5,6 +5,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
     create_table :users do |t|
       ## Database authenticatable
       t.string :img_url
+      # t.string :expertise,          null: false  # later change this to single checkbox choice for user types
       t.string :first_name,         null: false
       t.string :last_name,          null: false
       t.string :email,              null: false, default: ""

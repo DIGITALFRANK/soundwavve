@@ -4,6 +4,13 @@ class UsersController < ApplicationController
         @users = User.all
     end
 
+    def feed
+
+    end
+
+    def profile
+
+    end
 
 
     private

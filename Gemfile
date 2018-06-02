@@ -13,11 +13,23 @@
 # 4 - turn posts page into partial that can be rendered by JS and displayed multiple places
 
 # 5 - build studio table / model etc... create necessary relationships
-# 6 - follow tutorial for following / unfollowing users
-# 7 - follow tutorial for ActionCable live chat feature (once users follow one another (both active relationships), auto-generate the chat room)
+# 6 - add "expertise" (single checkbox choice - null: false) attribute to users table - display users by expertise  (artists, producers, engineers, studio owners, A & R's, label owners)
+
+
+# 7 - form partial for creating studio listings - studio session booking functionality  (bookings table? - similar to [follow] relationship table?) 
+# 7 - follow tutorial for following / unfollowing users
+# 8 - follow tutorial for ActionCable live chat feature (once users follow one another (both active relationships), auto-generate the chat room)
 
 
 
+# 9 - fix bootstrap dropdowns / properly link nav 
+
+
+# 9 - CarrierWave for file upload (img / mp3 / video)
+# 9 - SoundCloud, Apple Music, Spotify API
+# 9 - Google Maps API & Geolocation gems
+# 9 - Uber & Lift API's
+# 9 - Stripe Payments & Paypal API
 
 
 

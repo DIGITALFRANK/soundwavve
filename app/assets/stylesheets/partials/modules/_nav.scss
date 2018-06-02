@@ -37,9 +37,21 @@
     }
 }
 
-#top_nav_dropdown {
+#user_greeting {
+    margin-right: 50px;
+}
+
+#user_dropdown, #studios_dropdown, #connect_dropdown {
     text-align: center;
     li {
         padding: 10px;
+    }
+}
+
+.nav_links {
+    float: right;
+    > li {
+        display: inline;
+        margin-left: 25px;
     }
 }

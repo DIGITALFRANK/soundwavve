@@ -27,7 +27,7 @@
                 <span class="caret"></span>
               </a>
               <ul id="user_dropdown" class="dropdown-menu" role="menu" aria-labelledby="userDropdown">
-                  <li><%= link_to 'home', root_path, :class => 'nav-item' %></li>
+                  <li><%= link_to 'home', posts_path, :class => 'nav-item' %></li>
                   <li><%= link_to 'profile', "/users/#{current_user.id}", :class => 'nav-item' %></li>
                   <div class="dropdown-divider"></div>
                   <li><%= link_to 'log out', destroy_user_session_path, method: :delete, :class => 'nav-item' %></li>

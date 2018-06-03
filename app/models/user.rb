@@ -5,6 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :studios
+  has_many :bookings
+  has_many :relationships
 
   has_many :posts
   has_many :comments

@@ -10,7 +10,7 @@
 
 # 2 - style devise registration & login (add necessary form fields for registration)
 # 3 - begin post-login home page (users/feed) - scaffold layout
-# 4 - turn posts page into partial that can be rendered by JS and displayed multiple places
+# 4 - turn posts/new page into partial that can be rendered by JS and displayed multiple places
 
 # 5 - build studio table / model etc... create necessary relationships
 # 6 - add "expertise" (single checkbox choice - null: false) attribute to users table - display users by expertise  (artists, producers, engineers, studio owners, A & R's, label owners)

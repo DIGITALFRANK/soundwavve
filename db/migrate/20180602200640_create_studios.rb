@@ -10,6 +10,14 @@ class CreateStudios < ActiveRecord::Migration[5.2]
       t.boolean :producer_avail
       t.boolean :engineer_avail
 
+
+      t.time :opening_itme
+      t.time :closing_time
+
+      t.integer :hourly_rate
+
+      t.interger :user_id
+
       t.timestamps
     end
   end

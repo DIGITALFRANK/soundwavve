@@ -10,10 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_02_200640) do
+ActiveRecord::Schema.define(version: 2018_06_03_232506) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "bookings", force: :cascade do |t|
+    t.integer "studio_id"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "comments", force: :cascade do |t|
     t.integer "user_id"
@@ -31,6 +38,22 @@ ActiveRecord::Schema.define(version: 2018_06_02_200640) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "relationships", force: :cascade do |t|
+    t.integer "follower_id"
+    t.integer "followed_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "sessions", force: :cascade do |t|
+    t.integer "booking_id"
+    t.tsrange "time"
+    t.integer "total_cost"
+    t.boolean "paid"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "studios", force: :cascade do |t|
     t.string "city"
     t.string "studio_name"
@@ -38,6 +61,10 @@ ActiveRecord::Schema.define(version: 2018_06_02_200640) do
     t.integer "staff_avail"
     t.boolean "producer_avail"
     t.boolean "engineer_avail"
+    t.time "opening_itme"
+    t.time "closing_time"
+    t.integer "hourly_rate"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

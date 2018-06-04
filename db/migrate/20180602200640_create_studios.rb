@@ -16,7 +16,7 @@ class CreateStudios < ActiveRecord::Migration[5.2]
 
       t.integer :hourly_rate
 
-      t.interger :user_id
+      t.integer :user_id
 
       t.timestamps
     end

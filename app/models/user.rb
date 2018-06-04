@@ -4,9 +4,12 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  
+  
+  has_many :relationships
   has_many :studios
   has_many :bookings
-  has_many :relationships
+  has_many :sessions
 
   has_many :posts
   has_many :comments

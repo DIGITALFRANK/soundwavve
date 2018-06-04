@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 2018_06_03_232506) do
   create_table "sessions", force: :cascade do |t|
     t.integer "booking_id"
     t.tsrange "time"
+    t.integer "hours"
     t.integer "total_cost"
     t.boolean "paid"
     t.datetime "created_at", null: false
@@ -61,7 +62,7 @@ ActiveRecord::Schema.define(version: 2018_06_03_232506) do
     t.integer "staff_avail"
     t.boolean "producer_avail"
     t.boolean "engineer_avail"
-    t.time "opening_itme"
+    t.time "opening_time"
     t.time "closing_time"
     t.integer "hourly_rate"
     t.integer "user_id"

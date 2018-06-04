@@ -1,0 +1,40 @@
+
+#login_container, #register_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/assets/mixing_board.png");
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#login_container {
+    h2 {
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    label {
+        width: 171px;
+    }
+    label.remember_me {
+        transform: translateY(-17px);
+        padding-left: 25px;
+        color: #666;
+    }
+}
+
+#register_container em {
+    font-size: .85em;
+    color: #666;
+}
+

@@ -6,6 +6,7 @@ class CreateSessions < ActiveRecord::Migration[5.2]
       t.tsrange :time # have restrictions that match the booking_id's studio hours of operation
 
 
+      t.integer :hours
       t.integer :total_cost
       t.boolean :paid
 

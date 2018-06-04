@@ -1,10 +1,27 @@
 
 
+a {
+    color: violet;
+  
+    &:visited {
+      color: violet;
+    }
+  
+    &:hover {
+      color: rgb(10, 252, 163);
+      text-decoration: none;
+    }
+}
+
 .devise_links {
     margin-top: 25px;
     text-align: center;
     a {
         font-weight: bold;
+        color: #444;
+        &:hover {
+            color: #000;
+        }
     }
 }
 

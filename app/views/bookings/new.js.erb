@@ -1,0 +1,23 @@
+
+
+// Add the dialog title
+// $('#dialog h3').html("<i class='glyphicon glyphicon-plus'></i> Add New Customer");
+ 
+// Render the new form
+// $('.modal-body').html('<%= j render("") %>');
+ 
+// Show the dynamic dialog
+// $('#dialog').modal("show");
+ 
+// Set focus to the first element
+// $('#dialog').on('shown.bs.modal', function () {
+//	  $('.first_input').focus()
+// })
+
+
+
+$('.modal-title').html("book your session");
+
+$('.modal-body').html('<%= j render("shared/form") %>');
+
+$('#dialog').modal("show");

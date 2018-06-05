@@ -1,0 +1,6 @@
+
+$('.modal-title').html("edit <%=  j @studio.studio_name %>");
+
+$('.modal-body').html('<%= j render("edit_form") %>');
+
+$('#dialog').modal("show");

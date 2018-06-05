@@ -1,0 +1,28 @@
+    
+<%= bootstrap_form_for(@studio, remote: true) do |f| %>
+
+    <h2>Edit <%= @studio.studio_name %> </h2>
+
+    <%= f.hidden_field :user_id, value: current_user.id %>
+
+    <%= f.text_field :city, autofocus: true, class: "studio_input" %>
+    <%= f.text_field :studio_name, class: "studio_input" %>
+    <%= f.text_field :specialty, class: "studio_input" %>
+    </br>
+    <%= f.number_field :staff_avail, label: "number of staff available" %>
+    <%= f.check_box :producer_avail, value: true, label: "producer available?" %>
+    <%= f.check_box :engineer_avail, value: true, label: "engineer available?" %>
+    </br>
+    <div class="opening_time">
+        <%= f.time_select :opening_time %>
+    </div>
+    <div class="closing_time">
+        <%= f.time_select :closing_time %>
+    </div>
+    </br>
+    </br>
+    <%= f.number_field :hourly_rate, class: "studio_input" %>
+    </br>
+    <%= f.submit "confirm edits" %>
+<% end %>
+

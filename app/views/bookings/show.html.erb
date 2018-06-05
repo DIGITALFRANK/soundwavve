@@ -1,0 +1,30 @@
+
+
+
+<div class="container">
+    <h1> <%= @studio.studio_name %> </h1>
+
+    <%# unless @studio.user_id = current_user.id %>
+
+        <% @booking = @studio.bookings.new %>
+        <% @session = @booking.sessions.new %>
+
+        <%= bootstrap_form_for(@booking, remote: true) do |f|%>
+            <%= f.hidden_field :user_id, value: current_user.id %>
+            <%= f.submit "book this studio", class: "btn btn-sm btn-primary book_button" %>
+        <% end %>
+
+
+    </br>
+    </br>
+    </br>
+
+        <%= link_to 'book this studio!!!', new_booking_path, remote: true, :class => 'btn btn-sm btn-secondary' %>
+
+    <%# end %>
+</div>
+
+
+<%# render 'bookings/shared/new' %>
+
+<% render 'edit' %>

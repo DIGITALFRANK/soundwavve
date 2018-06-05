@@ -6,12 +6,16 @@ Rails.application.routes.draw do
   resources :posts
   resources :comments
   resources :studios
-  resources :bookings, only: [:create, :destroy]
+  resources :bookings #, only: [:create, :destroy]
   resources :sessions
 
 
 
   devise_for :users
+  devise_scope :user do 
+    match '/sessions/user', to: 'devise/sessions#create', via: :post
+  end
+
   get "/users/:id" => 'users#show'
 
   

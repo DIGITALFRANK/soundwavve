@@ -1,0 +1,8 @@
+
+<%= bootstrap_form_for(@session, remote: true) do |f|%>
+    <%= f.hidden_field :studio_id, value: @studio.id %>
+    <%= f.hidden_field :user_id, value: current_user.id %>
+    <%= f.datetime_select :time, label: 'Time Range' %>
+    </hr>
+    <%= f.submit "confirm booking", class: "btn btn-sm btn-outline-dark book_session" %>
+<% end %>
